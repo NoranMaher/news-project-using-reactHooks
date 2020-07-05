@@ -1,0 +1,27 @@
+.newsCard{
+    width: calc(33.3% - 1.6rem);
+    margin: 0.8rem;
+    border-radius: 0.19rem;
+    padding: 1.6875rem 1.125rem;
+    background-color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px #a5a3a3;
+    .cardImg{
+        height: 11.75rem;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    h2 {
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #797979;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,28 @@
+.loading{
+    position: absolute;
+    left: 20%;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.list{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #efefef;
+    padding:3rem 1.2rem;
+
+
+}
+.mainContainer{
+    width: 100%;
+    margin-left: 0%;
+    transition: all 200ms;
+    &.open{
+        width:80%;
+        margin-left: 20%;
+        transition: all 200ms;
+    }
+}

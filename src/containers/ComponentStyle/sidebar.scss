@@ -1,0 +1,113 @@
+.sidebar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.24),
+    0 0 0.5rem 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-flow: column;
+  width:0;
+  overflow: hidden;
+  background-color: #fff;
+  transition:0.2s;
+  &.open{
+      width: 20%;
+      transition: 0.2s;
+  }
+  .sidebatTop {
+    background-color: #2b3c4e;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9375rem;
+    img {
+      &.logo {
+        width: 46%;
+      }
+    }
+  }
+  .userEmail {
+    padding: 0.9375rem;
+    border-radius: 0.13rem;
+    border: solid 0.06rem #e0e0e0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.9375rem;
+    span {
+      font-size: 0.88rem;
+
+      color: rgba(33, 33, 33, 0.87);
+    }
+    img {
+      width: 1rem;
+
+      filter: opacity(0.5);
+    }
+  }
+  ul {
+    padding: 0rem;
+    margin: 0;
+    list-style-type: none;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0.8125rem 1rem;
+      cursor: pointer;
+      transition: all 200ms;
+      &:hover {
+        background-color: #efefef;
+        transition: all 200ms;
+      }
+      &.active {
+        background-color: #efefef;
+        border-left: 2px solid #2b3c4e;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse;
+        text-decoration: none;
+        position: relative;
+        width: 100%;
+        justify-content: flex-end;
+        font-size: 1rem;
+        color: rgba(33, 33, 33, 0.87);
+        line-height: 1.5rem;
+        .menuIcon {
+          margin-right: 0.5rem;
+        }
+        .arrowRight {
+          position: absolute;
+          right: 0rem;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .sidebarFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    margin-bottom: 2rem;
+    margin-top: auto;
+    span {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

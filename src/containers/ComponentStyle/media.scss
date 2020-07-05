@@ -1,0 +1,142 @@
+@media only screen and (max-width: 786px) {
+  .App {
+    .mainContainer {
+      &.open {
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .filter {
+      padding: 1rem;
+      position: relative;
+      form {
+        display: none;
+        &.expand {
+          display: flex;
+          width: calc(100% - 2rem);
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          right: 0;
+          margin: 1rem auto;
+          top: 0;
+          bottom: 0;
+          input {
+            width: 100%;
+          }
+          .searchImg {
+            display: none;
+          }
+          .closeSearch{
+            width: 1rem;
+            position: absolute;
+            right: 0.5rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+          }
+        }
+      }
+      .categoryDropdown {
+        display: none;
+        &.expand{
+            display: flex;
+            width: calc(100% - 4rem);
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            margin: 1rem auto;
+            top: 0;
+            bottom: 0;
+            padding: 0.5rem 1rem;
+            .arrowDown{
+                right: 2.5rem;
+                display: flex;
+            }
+        }
+      }
+
+      .filterMobile {
+        display: flex;
+        flex-flow: row-reverse;
+        .searchMobile {
+          width: 2.25rem;
+          height: 2.25rem;
+          border-radius: 1.38rem;
+          border: solid 0.06rem #e0e0e0;
+          background-color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1rem;
+          img {
+            width: 54%;
+            filter: opacity(0.8);
+          }
+        }
+        .categoryMobile {
+          display: flex;
+          flex-flow: row-reverse;
+          align-items: center;
+          border-radius: 1.38rem;
+          border: solid 0.06rem #e0e0e0;
+          background-color: #ffffff;
+          overflow: hidden;
+          padding: 0rem 0.7rem;
+          img {
+            &:first-of-type {
+              width: 1rem;
+              margin-left: 0.5rem;
+            }
+            &:last-of-type {
+              width: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    header {
+      padding: 1rem;
+      .userMobile {
+        display: flex;
+        align-items: center;
+        img {
+          width: 2rem;
+        }
+      }
+      .notification,
+      .user {
+        display: none;
+      }
+    }
+
+    &.menuOpened {
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+    .list {
+      padding: 1rem;
+    }
+
+    .newsCard {
+      width: 100%;
+    }
+    .sidebar {
+      &.open {
+        width: 80%;
+      }
+    }
+  }
+}
